@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+*, 
+*::after, 
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #2353F5;
+    --gray: #A8A8A8;
+    --black: #333333;
+    --white: #fff;
+    --Montserrat: 'Montserrat', sans-serif;
+}
+
+::selection {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+body {
+    background-image: url(images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: var(--Montserrat);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    min-width: 375px;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow-x: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.hero {
+    background-color: var(--blue);
+    background-image: url(images/Pattern.png);
+    padding: 3em 4em;
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    font-weight: 600;
+}
+
+.info {
+    padding: 2em 1.5em;
+}
+
+p {
+    text-align: center;
+    color: var(--black);
+    font-weight: 600;
+    margin-bottom: 2em;
+}
+
+.email {
+    display: flex;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+input {
+    width: 75%;
+    padding: 0.75em 1em;
+    border-radius: 5px;
+    background-color: hsla(0, 0%, 66%, 0.15);
+    border: 1px solid var(--gray);
+    font-family: var(--Montserrat);
+    font-size: 18px;
+    color: var(--black);
+}
+
+input:focus {
+    outline: 1px solid var(--blue);
+}
+
+input::placeholder {
+    font-family: var(--Montserrat);
+    font-size: 16px;
+}
+
+a {
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 5px;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+a:hover {
+    color: var(--blue);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+}
+
+span {
+    color: var(--gray);
+    display: inline-block;
+    margin: 0 0 2em 0.5em;
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+    margin-bottom: 1.5em;
+}
+
+.profile img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.name p {
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+}
+
+.info p:last-of-type {
+    font-weight: 400;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .container {
+        border-radius: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+
+
+}
