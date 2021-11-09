@@ -1,2 +1,2 @@
 # Newsletter Popup
-![Screenshot](screenshot.png)
+![Screenshot](images/screenshot.png)
